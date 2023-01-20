@@ -47,14 +47,14 @@ getData()
       
       <Container fixed>
       <p>Base={weather.base}</p>
-      <p>location={weather.name}</p>
-      <p>windspeed={weather.wind.speed}</p>
+      <p style={{color:'Green',fontSize: '32px',fontFamily:'montserrat'}}>location={weather.name}</p>
+      <p style={{fontSize:'45px'}}>windspeed={weather.wind.speed}</p>
       <p>feelslike={weather.main.feels_like}</p>
       <p>humidity={weather.main.humidity}</p>
-      <p> maxtemperature={weather.main.temp_max}</p>
-      <p>mintemperature={weather.main.temp_min}</p>
-      <p>temperature={weather.main.temp / 10}</p>
-      <p>weather={weather.weather[0].description}</p>
+      <p style={{color:'red',fontFamily:'opensans'}}>maxtemperature={weather.main.temp_max/ 10}</p>
+      <p style={{color:'red',fontFamily: 'opensans'}}>mintemperature={weather.main.temp_min/ 10}</p>
+      <p style={{color:'yellow',fontSize:'45px',fontFamily: 'opensans'}}>temperature={weather.main.temp / 10}</p>
+      <p style={{color:'violet',fontFamily:'lato'}}>weather={weather.weather[0].description}</p>
         
       </Container>
       
